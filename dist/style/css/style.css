@@ -1,0 +1,136 @@
+body {
+  background-color: #7ec9d4;
+  margin: 0;
+  overflow: scroll;
+}
+
+.header {
+  height: 30px;
+  background-color: red;
+}
+
+.header__nav {
+  width: 200px;
+  height: 30px;
+  background-color: blue;
+  float: right;
+}
+
+.header__nav:hover .header__list {
+  display: block;
+}
+
+.header__nav:hover .header__img {
+  padding: 3px 0 0 46%;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.header__list {
+  display: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 3px;
+  list-style: none;
+  position: relative;
+  background-color: yellow;
+}
+
+.header__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__list-item:hover {
+  background-color: blueviolet;
+  cursor: pointer;
+}
+
+.header__list-item--link {
+  padding: 3px 0;
+  font-size: 25px;
+}
+
+.header__img {
+  padding: 3px 46% 0 0;
+  width: 20px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.cards__wrap {
+  margin: 25px 0 0 62px;
+  min-width: 300px;
+  height: 500px;
+  background-color: #C9DBDC;
+  border-radius: 20px;
+  padding: 10px 20px;
+  background: #68bcc8;
+  background: radial-gradient(circle, #a3bfd0 80%, #171639 100%);
+  -webkit-box-shadow: 12px 8px 1px #4d4c86;
+          box-shadow: 12px 8px 1px #4d4c86;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+}
+
+form .search_id {
+  width: 600px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+form .button {
+  width: 100px;
+  border-radius: 10px;
+}
+
+.title {
+  position: relative;
+  text-align: center;
+}
+
+.title__close {
+  width: 35px;
+  position: absolute;
+  top: -19px;
+  right: -7px;
+  z-index: 100;
+}
+
+.title__close:hover {
+  cursor: pointer;
+}
+
+.title__close:hover .cards__wrap {
+  display: none;
+}
+
+.weather {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=style.css.map */
